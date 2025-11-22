@@ -1,187 +1,568 @@
-
 <!DOCTYPE html>
 <html lang="ru">
-
+  
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>TaskFlow - Система управления задачами</title>
+	<title>Lamborghini - Легендарные Суперкары</title>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&display=swap"
+		rel="stylesheet">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
 
-<body>
-	<a target="_top"
-		href="https://www.flamingtext.com/"><img src="https://blog.flamingtext.com/blog/2025/10/25/flamingtext_com_1761374731_669785419.gif" borde="0" alt="Logo Design by FlamingText.com" title="Logo Design by FlamingText.com"></a>
-		<br/>Logo Design by <a href="https://www.flamingtext.com/">FlamingText.com</a>
+		body {
+			font-family: 'Montserrat', sans-serif;
+			background: #000;
+			color: #fff;
+			overflow-x: hidden;
+		}
 
-		<a
-			href="https://www.figma.com/proto/upv5mlPrAI6rZwmPJMPegJ/Untitled?node-id=1-2p=ft=yAaH1QUZfB0gRCb8-0scaling=min-zoomcontent-scaling=fixedpage-id=0%3A1">Прототип
-			на фигма</a>
+		/* Header */
+		.header {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			padding: 1.5rem 5%;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			background: rgba(0, 0, 0, 0.9);
+			backdrop-filter: blur(10px);
+			z-index: 1000;
+			border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+		}
 
-</body>
-body>
-<!-- Шапка сайта с навигацией -->
-<header class="header">
-	<a href="#" class="logo">LAMBORGHINI</a>
-	<nav class="navbar">
-		<a href="#home" class="active">Home</a>
-		<a href="#models">Models</a>
-		<a href="#about">History</a>
-		<a href="#contact">Contact</a>
-	</nav>
-	<div class="menu-icon" id="menu-icon">
-		<i class='bx bx-menu'></i>
-	</div>
-</header>
-<!-- Главная секция (Hero Section) -->
-<section class="home" id="home">
-	<div class="home-content">
-		<h1>ВЫХОДЯЩИЙ ЗА РАМКИ ОБЫЧНОГО</h1>
-		<h3>Легендарные Итальянские Суперкары</h3>
-		<p>Приткройте для себя мощь, дизайн и инновации самых культовых моделей Lamborghini. Здесь страсть сочетается с
-		производительностью.
-			performance.</p>
-		<a href="#models" class="btn">Explore Models</a>
-	</div>
-	<div class="home-img">
-		<!-- Заглушка для изображения. В идеале - поставить прямую ссылку на изображение Lamborghini -->
-		<div class="img-placeholder">
-			<span>Lamborghini Aventador</span>
-		</div>
-  </div>
-</section>
+		.logo {
+			font-size: 2rem;
+			font-weight: 900;
+			color: #ff2e2e;
+			text-decoration: none;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+		}
 
-<!-- Секция с моделями -->
-<section class="models" id="models">
-    <h2 class="heading">НАШИ <span>ЛЕГЕНДАРНЫЕ МОДЕЛИ 
-      
-      
-      
-      <body>
-        <div class="cool-text">LAMBORGHINI</div>
-      </body>
-      
-      </html></span></h2>
-    <div class="models-container">
-        <!-- Карточка 1 -->
-        <div class="model-box">
-            <div class="model-image" style="background-color: #ff2e2e;">
-                <!-- Здесь должен быть фон-изображение -->
-            </div>
-            <div class="model-info">
-                
-                  <style>
-                    .text-3d {
-                      font-size: 70px;
-                      font-weight: 900;
-                      color: #ff2e2e;
-                      text-transform: uppercase;
-                      text-align: center;
-                      text-shadow: 1px 1px 0 #d40000,
-                        2px 2px 0 #d40000,
-                        3px 3px 0 #d40000,
-                        4px 4px 0 #d40000,
-                        5px 5px 0 #d40000,
-                        6px 6px 0 #d40000,
-                        7px 7px 0 #d40000,
-                        8px 8px 0 #d40000,
-                        9px 9px 0 #d40000,
-                        10px 10px 0 #d40000,
-                        11px 11px 15px rgba(0, 0, 0, 0.5);
-                      transform: perspective(500px) rotateX(10deg);
-                    }
-                  </style>
-                  
-                  <div class="text-3d">Aventador</div>
-                  </h4>
-                <p>Идеальное воплощение суперспортивного автомобиля с двигателем V12.
-                   Шедевр инженерной мысли и дизайна
-                  Lamborghini Aventador — это был не просто автомобиль.
-                   Это был символ, икона и вершина инженерной мысли Lamborghini на целое десятилетие.
-                    Его предсмертный рывок V12 стал гимном эпохи, закончившейся с его уходом в 2022 году.
+		.navbar {
+			display: flex;
+			gap: 2rem;
+		}
 
-                  and design.</p>
-                <a href="#" class="btn">Discover</a>
-              </div>
-              </div>
-              <!-- Карточка 2 -->
-              <div class="model-box">
-                <div class="model-image" style="background-color: #2e51ff;">
-                  <!-- Здесь должен быть фон-изображение -->
-                </div>
-                <div class="model-info">
-                  <h4><style>
-                    .animated-text {
-                      font-size: 40px;
-                      font-weight: bold;
-                      background: linear-gradient(90deg, #ff2e2e, #ff8c00, #ff2e2e);
-                      background-size: 200% auto;
-                      -webkit-background-clip: text;
-                      -webkit-text-fill-color: transparent;
-                      animation: gradientMove 3s linear infinite;
-                      text-align: center;
-                      text-transform: uppercase;
-                    }
-                  
-                    @keyframes gradientMove {
-                      0% {
-                        background-position: 0% center;
-                      }
-                  
-                      100% {
-                        background-position: 200% center;
-                      }
-                    }
-                  </style>
-                  
-                  <div class="animated-text">Huracán</div></h4>
-                  <p>Lamborghini Huracán — это не просто суперкар, это настоящая легенда машин
-                    , которая пришла на смену невероятно популярному Gallardo
-                     и стала одним из самых успешных автомобилей в истории марки
-                    Название "Huracán" (с исп. — "ураган") продолжает традицию именования автомобилей Lamborghini в честь боевых быков.
-                     Huracán был боевым быком, известным своей неистовой смелостью в битве 1879 года.
-                      Имя полностью отражает характер автомобиля — необузданный, стремительный и мощный.
-Он дебютировал в 2014 году и с тех пор постоянно эволюционировал, обзаводясь множеством модификаций.
-                  </p>
-                  
-                </div>
-            </div>
-            <!-- Карточка 3 -->
-            <div class="model-box">
-                <div class="model-image" style="background-color: #2eff8b;">
-                    <!-- Здесь должен быть фон-изображение -->
-                </div>
-                <div class="model-info">
-                    <h4><style>
-	.neon-text {
-		font-size: 50px;
-		font-weight: bold;
-		color: #fff;
-		text-align: center;
-		text-transform: uppercase;
-		animation: neonGlow 1.5s ease-in-out infinite alternate;
-		text-shadow: 0 0 5px #fff,
-			0 0 10px #fff,
-			0 0 15px #ff2e2e,
-			0 0 20px #ff2e2e,
-			0 0 25px #ff2e2e;
-	}
+		.navbar a {
+			color: #fff;
+			text-decoration: none;
+			font-weight: 600;
+			transition: color 0.3s ease;
+			position: relative;
+		}
 
-	@keyframes neonGlow {
-		from {
+		.navbar a:hover,
+		.navbar a.active {
+			color: #ff2e2e;
+		}
+
+		.navbar a::after {
+			content: '';
+			position: absolute;
+			bottom: -5px;
+			left: 0;
+			width: 0;
+			height: 2px;
+			background: #ff2e2e;
+			transition: width 0.3s ease;
+		}
+
+		.navbar a:hover::after {
+			width: 100%;
+		}
+
+		.menu-icon {
+			display: none;
+			font-size: 2rem;
+			cursor: pointer;
+		}
+
+		/* Hero Section */
+		.home {
+			min-height: 100vh;
+			display: flex;
+			align-items: center;
+			padding: 0 5%;
+			background: linear-gradient(135deg, #000 0%, #1a1a1a 100%);
+			position: relative;
+			overflow: hidden;
+		}
+
+		.home::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 50%;
+			height: 100%;
+			background: linear-gradient(90deg, transparent, rgba(255, 46, 46, 0.1));
+		}
+
+		.home-content {
+			flex: 1;
+			max-width: 600px;
+			z-index: 1;
+		}
+
+		.home-content h1 {
+			font-size: 3.5rem;
+			font-weight: 900;
+			margin-bottom: 1rem;
+			background: linear-gradient(45deg, #fff, #ff2e2e);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			line-height: 1.2;
+		}
+
+		.home-content h3 {
+			font-size: 1.5rem;
+			font-weight: 600;
+			margin-bottom: 1.5rem;
+			color: #ccc;
+		}
+
+		.home-content p {
+			font-size: 1.1rem;
+			line-height: 1.6;
+			margin-bottom: 2rem;
+			color: #999;
+		}
+
+		.btn {
+			display: inline-block;
+			padding: 1rem 2rem;
+			background: linear-gradient(45deg, #ff2e2e, #ff6b6b);
+			color: white;
+			text-decoration: none;
+			border-radius: 50px;
+			font-weight: 600;
+			transition: all 0.3s ease;
+			border: none;
+			cursor: pointer;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+		}
+
+		.btn:hover {
+			transform: translateY(-3px);
+			box-shadow: 0 10px 25px rgba(255, 46, 46, 0.3);
+		}
+
+		.home-img {
+			flex: 1;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.img-placeholder {
+			width: 600px;
+			height: 400px;
+			background: linear-gradient(45deg, #1a1a1a, #333);
+			border-radius: 20px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border: 2px solid #333;
+			position: relative;
+			overflow: hidden;
+		}
+
+		.img-placeholder::before {
+			content: '';
+			position: absolute;
+			top: -50%;
+			left: -50%;
+			width: 200%;
+			height: 200%;
+			background: linear-gradient(45deg, transparent, rgba(255, 46, 46, 0.1), transparent);
+			animation: shine 3s infinite;
+		}
+
+		@keyframes shine {
+			0% {
+				transform: rotate(0deg);
+			}
+
+			100% {
+				transform: rotate(360deg);
+			}
+		}
+
+		.img-placeholder span {
+			font-size: 1.5rem;
+			font-weight: 600;
+			color: #666;
+			text-align: center;
+		}
+
+		/* Models Section */
+		.models {
+			padding: 5rem 5%;
+			background: #0a0a0a;
+		}
+
+		.heading {
+			font-size: 3rem;
+			font-weight: 900;
+			text-align: center;
+			margin-bottom: 3rem;
+			text-transform: uppercase;
+		}
+
+		.heading span {
+			background: linear-gradient(45deg, #ff2e2e, #ff8c00);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+		}
+
+		.models-container {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+			gap: 2rem;
+			max-width: 1200px;
+			margin: 0 auto;
+		}
+
+		.model-box {
+			background: linear-gradient(145deg, #1a1a1a, #262626);
+			border-radius: 20px;
+			overflow: hidden;
+			transition: all 0.3s ease;
+			border: 1px solid #333;
+			position: relative;
+		}
+
+		.model-box:hover {
+			transform: translateY(-10px);
+			box-shadow: 0 20px 40px rgba(255, 46, 46, 0.2);
+			border-color: #ff2e2e;
+		}
+
+		.model-image {
+			height: 250px;
+			background: linear-gradient(45deg, #ff2e2e, #ff8c00);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			position: relative;
+			overflow: hidden;
+		}
+
+		.model-image::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+		}
+
+		.model-info {
+			padding: 2rem;
+		}
+
+		.model-info h4 {
+			margin-bottom: 1rem;
+		}
+
+		.model-info p {
+			color: #ccc;
+			line-height: 1.6;
+			margin-bottom: 1.5rem;
+		}
+
+		/* Text Effects */
+		.text-3d {
+			font-size: 3rem !important;
+			font-weight: 900;
+			color: #ff2e2e;
+			text-transform: uppercase;
+			text-align: center;
+			text-shadow: 1px 1px 0 #d40000,
+				2px 2px 0 #d40000,
+				3px 3px 0 #d40000,
+				4px 4px 0 #d40000,
+				5px 5px 0 #d40000,
+				6px 6px 0 #d40000,
+				7px 7px 0 #d40000,
+				8px 8px 0 #d40000,
+				9px 9px 0 #d40000,
+				10px 10px 0 #d40000,
+				11px 11px 15px rgba(0, 0, 0, 0.5);
+			transform: perspective(500px) rotateX(10deg);
+			margin-bottom: 1rem;
+		}
+
+		.animated-text {
+			font-size: 2.5rem !important;
+			font-weight: bold;
+			background: linear-gradient(90deg, #ff2e2e, #ff8c00, #ff2e2e);
+			background-size: 200% auto;
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			animation: gradientMove 3s linear infinite;
+			text-align: center;
+			text-transform: uppercase;
+			margin-bottom: 1rem;
+		}
+
+		.neon-text {
+			font-size: 3rem !important;
+			font-weight: bold;
+			color: #fff;
+			text-align: center;
+			text-transform: uppercase;
+			animation: neonGlow 1.5s ease-in-out infinite alternate;
 			text-shadow: 0 0 5px #fff,
 				0 0 10px #fff,
 				0 0 15px #ff2e2e,
-				0 0 20px #ff2e2e;
+				0 0 20px #ff2e2e,
+				0 0 25px #ff2e2e;
+			margin-bottom: 1rem;
 		}
 
-		to {
-			text-shadow: 0 0 10px #fff,
-				0 0 20px #fff,
-				0 0 30px #ff2e2e,
-				0 0 40px #ff2e2e;
+		.cool-text {
+			font-size: 4rem;
+			font-weight: 900;
+			text-align: center;
+			background: linear-gradient(45deg, #ff2e2e, #ff8c00, #ff2e2e);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			margin: 2rem 0;
+			text-transform: uppercase;
+			letter-spacing: 3px;
 		}
-	}
-</style>
 
-<div class="neon-text">Urus</div>
-</h4>
-                    <p>Первый в мире супер-внедорожник. Душа суперспортивного автомобиля и функциональность внедорожника. Lamborghini Urus — это не просто еще одна модель в линейке. Это революция, которая изменила представление о том, каким может быть внедорожник и что вообще может быть Lamborghini..</p>
+		/* External Links */
+		.external-links {
+			text-align: center;
+			padding: 2rem 5%;
+			background: #0a0a0a;
+			border-top: 1px solid #333;
+		}
+
+		.external-links a {
+			color: #ff2e2e;
+			text-decoration: none;
+			margin: 0 1rem;
+			font-weight: 600;
+			transition: color 0.3s ease;
+		}
+
+		.external-links a:hover {
+			color: #ff8c00;
+		}
+
+		/* Responsive */
+		@media (max-width: 768px) {
+			.navbar {
+				display: none;
+			}
+
+			.menu-icon {
+				display: block;
+			}
+
+			.home {
+				flex-direction: column;
+				text-align: center;
+				padding-top: 5rem;
+			}
+
+			.home-content h1 {
+				font-size: 2.5rem;
+			}
+
+			.img-placeholder {
+				width: 100%;
+				height: 300px;
+				margin-top: 2rem;
+			}
+
+			.heading {
+				font-size: 2rem;
+			}
+
+			.models-container {
+				grid-template-columns: 1fr;
+			}
+
+			.text-3d,
+			.animated-text,
+			.neon-text {
+				font-size: 2rem !important;
+			}
+		}
+
+		@keyframes gradientMove {
+			0% {
+				background-position: 0% center;
+			}
+
+			100% {
+				background-position: 200% center;
+			}
+		}
+
+		@keyframes neonGlow {
+			from {
+				text-shadow: 0 0 5px #fff,
+					0 0 10px #fff,
+					0 0 15px #ff2e2e,
+					0 0 20px #ff2e2e;
+			}
+
+			to {
+				text-shadow: 0 0 10px #fff,
+					0 0 20px #fff,
+					0 0 30px #ff2e2e,
+					0 0 40px #ff2e2e;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<!-- External Links -->
+	<div class="external-links">
+		<a target="_top" href="https://www.flamingtext.com/">
+			<img src="https://blog.flamingtext.com/blog/2025/10/25/flamingtext_com_1761374731_669785419.gif" border="0" alt="Logo Design by FlamingText.com" title="Logo Design by FlamingText.com">
+        </a>
+			<br/>Logo Design by <a href="https://www.flamingtext.com/">FlamingText.com</a>
+
+			<a
+				href="https://www.figma.com/proto/upv5mlPrAI6rZwmPJMPegJ/Untitled?node-id=1-2p=ft=yAaH1QUZfB0gRCb8-0scaling=min-zoomcontent-scaling=fixedpage-id=0%3A1">
+				Прототип на фигма
+			</a>
+	</div>
+
+	<!-- Шапка сайта с навигацией -->
+	<header class="header">
+		<a href="#" class="logo">LAMBORGHINI</a>
+		<nav class="navbar">
+			<a href="#home" class="active">Home</a>
+			<a href="#models">Models</a>
+			<a href="#about">History</a>
+			<a href="#contact">Contact</a>
+		</nav>
+		<div class="menu-icon" id="menu-icon">
+			<i class='bx bx-menu'></i>
+		</div>
+	</header>
+
+	<!-- Главная секция (Hero Section) -->
+	<section class="home" id="home">
+		<div class="home-content">
+			<h1>ВЫХОДЯЩИЙ ЗА РАМКИ ОБЫЧНОГО</h1>
+			<h3>Легендарные Итальянские Суперкары</h3>
+			<p>Приткройте для себя мощь, дизайн и инновации самых культовых моделей Lamborghini. Здесь страсть
+				сочетается с производительностью.</p>
+			<a href="#models" class="btn">Explore Models</a>
+		</div>
+		<div class="home-img">
+			<div class="img-placeholder">
+				<span>Lamborghini Aventador</span>
+			</div>
+		</div>
+	</section>
+
+	<!-- Секция с моделями -->
+	<section class="models" id="models">
+		<h2 class="heading">НАШИ <span>ЛЕГЕНДАРНЫЕ МОДЕЛИ</span></h2>
+		<div class="models-container">
+			<!-- Карточка 1 -->
+			<div class="model-box">
+				<div class="model-image" style="background: linear-gradient(45deg, #ff2e2e, #ff6b6b);">
+					<!-- Здесь должен быть фон-изображение -->
+				</div>
+				<div class="model-info">
+					<div class="text-3d">Aventador</div>
+					<p>Идеальное воплощение суперспортивного автомобиля с двигателем V12. Шедевр инженерной мысли и
+						дизайна Lamborghini Aventador — это был не просто автомобиль. Это был символ, икона и вершина
+						инженерной мысли Lamborghini на целое десятилетие. Его предсмертный рывок V12 стал гимном эпохи,
+						закончившейся с его уходом в 2022 году.</p>
+					<a href="#" class="btn">Discover</a>
+				</div>
+			</div>
+
+			<!-- Карточка 2 -->
+			<div class="model-box">
+				<div class="model-image" style="background: linear-gradient(45deg, #2e51ff, #6b8cff);">
+					<!-- Здесь должен быть фон-изображение -->
+				</div>
+				<div class="model-info">
+					<div class="animated-text">Huracán</div>
+					<p>Lamborghini Huracán — это не просто суперкар, это настоящая легенда машин, которая пришла на
+						смену невероятно популярному Gallardo и стала одним из самых успешных автомобилей в истории
+						марки. Название "Huracán" (с исп. — "ураган") продолжает традицию именования автомобилей
+						Lamborghini в честь боевых быков.</p>
+					<a href="#" class="btn">Discover</a>
+				</div>
+			</div>
+
+			<!-- Карточка 3 -->
+			<div class="model-box">
+				<div class="model-image" style="background: linear-gradient(45deg, #2eff8b, #6bffa8);">
+					<!-- Здесь должен быть фон-изображение -->
+				</div>
+				<div class="model-info">
+					<div class="neon-text">Urus</div>
+					<p>Первый в мире супер-внедорожник. Душа суперспортивного автомобиля и функциональность
+						внедорожника. Lamborghini Urus — это не просто еще одна модель в линейке. Это революция, которая
+						изменила представление о том, каким может быть внедорожник и что вообще может быть Lamborghini.
+					</p>
+					<a href="#" class="btn">Discover</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<div class="cool-text">LAMBORGHINI</div>
+
+	<script>
+		// Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Mobile menu toggle
+        const menuIcon = document.getElementById('menu-icon');
+        const navbar = document.querySelector('.navbar');
+        
+        menuIcon.addEventListener('click', () => {
+            navbar.style.display = navbar.style.display === 'flex' ? 'none' : 'flex';
+        });
+
+        // Header background on scroll
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(0, 0, 0, 0.95)';
+            } else {
+                header.style.background = 'rgba(0, 0, 0, 0.9)';
+            }
+        });
+	</script>
+</body>
+
+</html>
